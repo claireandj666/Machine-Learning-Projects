@@ -50,10 +50,12 @@ g. Determine the importance of parameters using Ridge and Lasso model in two dif
 
 
 
+
 #### Conclusion:
 Performance: Ridge > Lasso > Random Forest > Logistic > SVM
-Cost: Logistic < Random Forest < Ridge < Lasso < SVM
-Tune the hyper parameters and tree size in Random Forest to avoid overfitting.
+
+Cost: Logistic < Random Forest < Ridge < Lasso < SVM 
+
 
 
 
