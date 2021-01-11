@@ -38,9 +38,19 @@ b. For each n(learn) ∈ {0.5n, 0.9n}, I repeated the following steps 100 times:
         3) test misclassification error rate
     
 c. Evaluate the cross validation error of lasso and ridge over m = 25 values of λ. This is a great way to plot all results in the same graph. 
-d. Evaluate the cross validation error of radial SVM.
-e. Record the time it takes to cross-validate Ridge/Lasso logistic regression and SVM for each n(learn). 
-f. Record the time it takes to fit a single Ridge/Lasso, Logistic Regression, Random Forest and SVM, using the optimal hyper parameters for each n(learn).
-G. Determine the importance of parameters using Ridge and Lasso model in two different training set {0.5n, 0.9n}. 
 
- 
+d. Evaluate the cross validation error of radial SVM.
+
+e. Record the time it takes to cross-validate Ridge/Lasso logistic regression and SVM for each n(learn). 
+
+f. Record the time it takes to fit a single Ridge/Lasso, Logistic Regression, Random Forest and SVM, using the optimal hyper parameters for each n(learn).
+
+g. Determine the importance of parameters using Ridge and Lasso model in two different training set {0.5n, 0.9n}. 
+
+
+#### Conclusion:
+
+
+
+
+
