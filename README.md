@@ -23,3 +23,16 @@ Key characteristics of this problem that are challenging and interesting include
     6. the true model is stochastic as a function of measurable factors. 
 
 
+#### Steps:
+
+a. Determine the dataset is banlanced or not. If not, 
+b. For each n(learn) ∈ {0.5n, 0.9n}, I repeated the following steps 100 times: 
+ 
+    1. Randomly split the dataset into two mutually exclusive datasets D(validation) and D(learn) with size n(validation) and n(learn) such that n(learn) + n(validation) = n. 
+    2. Use Dlearn to fit random forrest, radial svm, logistic, logistic lasso, and logistic ridge. 
+    3. Tune the hyper parameters (of radial svm, logistic lasso, and logistic ridge) using 10-fold CV. 
+    4. For each estimated model calculate the 
+        1)training rate
+        2) minimum cross-validation rate
+        3) test misclassification error rate
+ 
