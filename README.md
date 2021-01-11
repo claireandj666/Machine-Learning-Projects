@@ -23,6 +23,7 @@ Key characteristics of this problem that are challenging and interesting include
     6. the true model is stochastic as a function of measurable factors. 
 
 
+
 #### Steps:
 
 a. Determine the dataset is banlanced or not. If not, 
@@ -48,7 +49,13 @@ f. Record the time it takes to fit a single Ridge/Lasso, Logistic Regression, Ra
 g. Determine the importance of parameters using Ridge and Lasso model in two different training set {0.5n, 0.9n}. 
 
 
+
 #### Conclusion:
+Performance: Ridge > Lasso > Random Forest > Logistic > SVM
+Cost: Logistic < Random Forest < Ridge < Lasso < SVM
+Tune the hyper parameters and tree size in Random Forest to avoid overfitting.
+
+
 
 
 
