@@ -28,11 +28,19 @@ Key characteristics of this problem that are challenging and interesting include
 a. Determine the dataset is banlanced or not. If not, 
 b. For each n(learn) ∈ {0.5n, 0.9n}, I repeated the following steps 100 times: 
  
-    1. Randomly split the dataset into two mutually exclusive datasets D(validation) and D(learn) with size n(validation) and n(learn) such that n(learn) + n(validation) = n. 
-    2. Use Dlearn to fit random forrest, radial svm, logistic, logistic lasso, and logistic ridge. 
-    3. Tune the hyper parameters (of radial svm, logistic lasso, and logistic ridge) using 10-fold CV. 
+    1. Randomly split the dataset into two mutually exclusive datasets D(validation) and D(learn) with size n(validation) and n(learn) 
+       such that n(learn) + n(validation) = n. 
+    2. Use D(learn) to fit Random Forest, radial SVM, Logistic, Logistic Lasso, and Logistic Ridge (five statistical models). 
+    3. Tune the hyper parameters (of radial SVM, Logistic Lasso, and Logistic Ridge) using 10-fold CV. 
     4. For each estimated model calculate the 
-        1)training rate
+        1) training rate
         2) minimum cross-validation rate
         3) test misclassification error rate
+    
+c. Evaluate the cross validation error of lasso and ridge over m = 25 values of λ. This is a great way to plot all results in the same graph. 
+d. Evaluate the cross validation error of radial SVM.
+e. Record the time it takes to cross-validate Ridge/Lasso logistic regression and SVM for each n(learn). 
+f. Record the time it takes to fit a single Ridge/Lasso, Logistic Regression, Random Forest and SVM, using the optimal hyper parameters for each n(learn).
+G. Determine the importance of parameters using Ridge and Lasso model in two different training set {0.5n, 0.9n}. 
+
  
